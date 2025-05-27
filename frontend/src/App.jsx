@@ -1,11 +1,15 @@
 import Header from './components/Header'
-import HomeScreen from './Screens/HomeScreen'
+import { Outlet } from 'react-router-dom'
+
+import { Container } from 'react-bootstrap'
 
 function App() {
   return (
     <>
       <Header />
-      <HomeScreen />
+      <Container className='my-2'>
+        <Outlet />
+      </Container>
     </>
   )
 }
